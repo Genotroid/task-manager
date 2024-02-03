@@ -1,17 +1,14 @@
 <?php
 use yii\helpers\Html;
 use deyraka\materialdashboard\web\MaterialDashboardAsset;
+use backend\assets\AppAsset;
 use yii\web\View;
 
 /* @var $this View */
 /* @var $content string */
-
-if (class_exists('deyraka\materialdashboard\web\MaterialDashboardAsset')) {
-    deyraka\materialdashboard\web\MaterialDashboardAsset::register($this);
-};
+AppAsset::register($this);
 
 $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/deyraka/yii2-material-dashboard/assets/');
-
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -20,9 +17,6 @@ $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/deyraka/yii2
         <meta charset="<?= Yii::$app->charset ?>">
         <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-
-        <!-- <link rel="stylesheet" type="text/css"
-              href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700&display=swap"/> -->
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
         <!-- FOR CHART -->

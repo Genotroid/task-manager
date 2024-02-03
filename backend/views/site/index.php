@@ -8,7 +8,7 @@ use deyraka\materialdashboard\widgets\Card;
 use deyraka\materialdashboard\widgets\Progress;
 use yii\helpers\Url;
 
-$this->title = 'Dashboard';
+$this->title = 'Панель управления проектами';
 ?>
 <div class="site-index">
     <div class="body-content">
